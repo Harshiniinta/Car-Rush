@@ -42,12 +42,11 @@ class Game:
         pygame.display.set_caption("2D Car Game")
 
         self.game_over_font = pygame.font.SysFont("Arial", 60)
-        self.score_font = pygame.font.Font("assets/fonts/joystix monospace.otf", 30)
+        self.score_font = pygame.font.Font("assets/fonts/joystix/joystix monospace.otf", 30)
         self.game_info_font = pygame.font.SysFont("Arial", 40)
 
         # load sound effects
-        self.car_crash_sound = pygame.mixer.Sound("assets/carCrash.wav")
-
+        self.car_crash_sound = pygame.mixer.Sound("assets/CarCrash/carCrash.wav")
         # load player car
         self.original_car = pygame.image.load("assets/cars/car.png")
         self.car = pygame.transform.scale(
